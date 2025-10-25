@@ -1,4 +1,4 @@
-# 🤖 xibe-pr1
+# 🤖 PR-REVIEW-XIBE
 
 <div align="center">
 
@@ -30,7 +30,7 @@ An intelligent, automated pull request review system that leverages OpenAI's GPT
 
 ## 🌟 Overview
 
-**xibe-pr1** is a sophisticated AI-powered GitHub PR review bot that revolutionizes code review processes by providing intelligent, context-aware analysis of pull requests. Built with Node.js and powered by OpenAI's advanced GPT models, this bot delivers comprehensive feedback including:
+**PR-REVIEW-XIBE** is a sophisticated AI-powered GitHub PR review bot that revolutionizes code review processes by providing intelligent, context-aware analysis of pull requests. Built with Node.js and powered by OpenAI's advanced GPT models, this bot delivers comprehensive feedback including:
 
 ✅ **Intelligent Code Analysis** - Deep semantic understanding of code changes
 ✅ **Security Vulnerability Detection** - Identifies potential security issues and risks
@@ -48,23 +48,23 @@ An intelligent, automated pull request review system that leverages OpenAI's GPT
 
 ### 🏗️ Architecture
 
-```
-┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│   GitHub PR     │───▶│   xibe-pr1 Bot   │───▶│   OpenAI GPT    │
-│   Comments      │    │   Webhook        │    │   API           │
-└─────────────────┘    │   Handler        │    └─────────────────┘
-                       │                  │
-                       │   ┌──────────┐   │    ┌─────────────────┐
-                       │   │ Analysis │   │    │   GitHub API    │
-                       │   │ Engine   │   │    │   Integration   │
-                       │   └──────────┘   │    └─────────────────┘
-                       └──────────────────┘
-                              │
-                              ▼
-                       ┌─────────────────┐
-                       │  PR Review      │
-                       │  Comments       │
-                       └─────────────────┘
+```mermaid
+graph TD
+    A[GitHub PR Comments] --> B[PR-REVIEW-XIBE Bot]
+    B --> C[Webhook Handler]
+    B --> D[Analysis Engine]
+    C --> E[OpenAI GPT API]
+    D --> E
+    B --> F[GitHub API Integration]
+    D --> G[PR Review Comments]
+    
+    style A fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#000
+    style B fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#000
+    style C fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#000
+    style D fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#000
+    style E fill:#e8f5e8,stroke:#388e3c,stroke-width:2px,color:#000
+    style F fill:#fce4ec,stroke:#c2185b,stroke-width:2px,color:#000
+    style G fill:#f1f8e9,stroke:#689f38,stroke-width:2px,color:#000
 ```
 
 ## ✨ Features
@@ -259,7 +259,7 @@ nano app-manifest.json
 Update the webhook URL to your server's domain:
 ```json
 {
-  "name": "xibe-pr1-review-bot",
+  "name": "pr-review-xibe-bot",
   "url": "https://your-domain.com",
   "hook_attributes": {
     "url": "https://your-domain.com/webhook"
@@ -284,7 +284,7 @@ Update the webhook URL to your server's domain:
 
 **Step 2: Basic Information**
 ```txt
-GitHub App name: xibe-pr1-review-bot (must be unique)
+GitHub App name: pr-review-xibe-bot (must be unique)
 Homepage URL: https://your-domain.com
 Description: AI-powered PR review bot using OpenAI GPT
 ```
@@ -353,7 +353,7 @@ Perfect for individual developers or private repositories where you don't need p
 
 1. Go to [GitHub Personal Access Tokens](https://github.com/settings/tokens)
 2. Click **"Generate new token (classic)"**
-3. Set token name: `xibe-pr1-bot-token`
+3. Set token name: `pr-review-xibe-bot-token`
 4. Set expiration: **"No expiration"** (or your preferred duration)
 
 #### 🔑 Step 2: Configure Token Permissions
@@ -482,16 +482,16 @@ For VPS deployments, use PM2 for reliable process management:
 npm install -g pm2
 
 # Start the bot
-pm2 start bot.js --name xibe-pr1-bot
+pm2 start bot.js --name pr-review-xibe-bot
 
 # Monitor the bot
 pm2 monit
 
 # View logs
-pm2 logs xibe-pr1-bot
+pm2 logs pr-review-xibe-bot
 
 # Restart if needed
-pm2 restart xibe-pr1-bot
+pm2 restart pr-review-xibe-bot
 
 # Save PM2 configuration (survives reboots)
 pm2 save
@@ -504,21 +504,21 @@ pm2 startup
 
 ```bash
 # Build the image
-docker build -t xibe-pr1-bot .
+docker build -t pr-review-xibe-bot .
 
 # Run with environment variables
 docker run -d \
-  --name xibe-pr1-bot \
+  --name pr-review-xibe-bot \
   -p 3000:3000 \
   --env-file .env \
-  xibe-pr1-bot
+  pr-review-xibe-bot
 
 # View logs
-docker logs -f xibe-pr1-bot
+docker logs -f pr-review-xibe-bot
 
 # Update deployment
-docker pull xibe-pr1-bot
-docker stop xibe-pr1-bot && docker start xibe-pr1-bot
+docker pull pr-review-xibe-bot
+docker stop pr-review-xibe-bot && docker start pr-review-xibe-bot
 ```
 
 ### ☁️ Cloud Deployment Options
@@ -667,11 +667,11 @@ Returns bot status and health information.
 - Rate limit handling
 - Memory usage optimization
 
-## 🌟 Why Choose xibe-pr1?
+## 🌟 Why Choose PR-REVIEW-XIBE?
 
 ### 🎯 Advantages Over Other PR Review Bots
 
-| Feature | xibe-pr1 | Traditional Bots | Manual Reviews |
+| Feature | PR-REVIEW-XIBE | Traditional Bots | Manual Reviews |
 |---------|----------|------------------|----------------|
 | **AI-Powered Analysis** | ✅ GPT-4 | ❌ Limited | ❌ Human-only |
 | **Security Detection** | ✅ Automated | ⚠️ Basic | ⚠️ Variable |
@@ -743,12 +743,12 @@ nano .env  # Configure your credentials
 **Step 3: Service Configuration**
 ```bash
 # Create systemd service file
-sudo nano /etc/systemd/system/xibe-pr1-bot.service
+sudo nano /etc/systemd/system/pr-review-xibe-bot.service
 ```
 
 ```ini
 [Unit]
-Description=xibe-pr1 AI PR Review Bot
+Description=PR-REVIEW-XIBE AI PR Review Bot
 After=network.target
 Wants=network.target
 
@@ -756,13 +756,13 @@ Wants=network.target
 Type=simple
 User=xibe-bot
 Group=xibe-bot
-WorkingDirectory=/home/xibe-bot/xibe-pr1
+WorkingDirectory=/home/xibe-bot/PR-REVIEW-XIBE
 ExecStart=/usr/bin/node bot.js
 Restart=always
 RestartSec=10
 StandardOutput=journal
 StandardError=journal
-SyslogIdentifier=xibe-pr1-bot
+SyslogIdentifier=pr-review-xibe-bot
 Environment=NODE_ENV=production
 Environment=PATH=/usr/bin:/home/xibe-bot/.nvm/versions/node/v18/bin
 
@@ -773,14 +773,14 @@ WantedBy=multi-user.target
 **Step 4: Start Service**
 ```bash
 # Enable and start the service
-sudo systemctl enable xibe-pr1-bot
-sudo systemctl start xibe-pr1-bot
+sudo systemctl enable pr-review-xibe-bot
+sudo systemctl start pr-review-xibe-bot
 
 # Check status
-sudo systemctl status xibe-pr1-bot
+sudo systemctl status pr-review-xibe-bot
 
 # View logs
-sudo journalctl -u xibe-pr1-bot -f
+sudo journalctl -u pr-review-xibe-bot -f
 ```
 
 #### Option 2: Docker Deployment
@@ -806,7 +806,7 @@ CMD ["node", "bot.js"]
 # docker-compose.yml
 version: '3.8'
 services:
-  xibe-pr1-bot:
+  pr-review-xibe-bot:
     build: .
     ports:
       - "3000:3000"
@@ -822,7 +822,7 @@ services:
 docker-compose up -d
 
 # View logs
-docker-compose logs -f xibe-pr1-bot
+docker-compose logs -f pr-review-xibe-bot
 ```
 
 ### ☁️ Cloud Platform Deployment
@@ -906,7 +906,7 @@ node --inspect bot.js
 node --prof bot.js
 ```
 
-### 🚀 Contributing to xibe-pr1
+### 🚀 Contributing to PR-REVIEW-XIBE
 
 We welcome contributions! Here's how to get started:
 
@@ -945,9 +945,9 @@ We welcome contributions! Here's how to get started:
 **Solutions:**
 ```bash
 # 1. Check if bot is running
-pm2 status xibe-pr1-bot
+pm2 status pr-review-xibe-bot
 # or
-sudo systemctl status xibe-pr1-bot
+sudo systemctl status pr-review-xibe-bot
 
 # 2. Verify webhook configuration
 curl -X POST http://localhost:3000/webhook \
@@ -955,9 +955,9 @@ curl -X POST http://localhost:3000/webhook \
   -d '{"action": "created", "issue": {"number": 1}}'
 
 # 3. Check logs
-pm2 logs xibe-pr1-bot --lines 50
+pm2 logs pr-review-xibe-bot --lines 50
 # or
-sudo journalctl -u xibe-pr1-bot --since today
+sudo journalctl -u pr-review-xibe-bot --since today
 
 # 4. Verify environment variables
 node -e "console.log(process.env.OPENAI_API_KEY ? 'API Key set' : 'API Key missing')"
@@ -1012,13 +1012,13 @@ nc -zv your-server.com 3000
 ### 📞 Getting Help
 
 #### Community Support
-- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/iotserver24/xibe-pr1/issues)
-- 💡 **Feature Requests**: [GitHub Discussions](https://github.com/iotserver24/xibe-pr1/discussions)
+- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/iotserver24/PR-REVIEW-XIBE/issues)
+- 💡 **Feature Requests**: [GitHub Discussions](https://github.com/iotserver24/PR-REVIEW-XIBE/discussions)
 - 🤝 **Contributing**: See [Contributing Guide](CONTRIBUTING.md)
 
 #### Professional Support
 For enterprise deployments and custom integrations:
-- 📧 **Email**: support@xibe-pr1.com
+- 📧 **Email**: support@pr-review-xibe.com
 - 💼 **Enterprise License**: Available for large-scale deployments
 - 🔧 **Custom Development**: Tailored solutions for specific needs
 
@@ -1056,7 +1056,7 @@ curl http://localhost:3000/health
 ```
 ISC License
 
-Copyright (c) 2024 xibe-pr1
+Copyright (c) 2024 PR-REVIEW-XIBE
 
 Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
 
@@ -1152,7 +1152,7 @@ git push origin feature/your-feature-name
 
 ### 🐛 Reporting Bugs
 
-Report bugs using GitHub's [issue tracker](https://github.com/iotserver24/xibe-pr1/issues) with:
+Report bugs using GitHub's [issue tracker](https://github.com/iotserver24/PR-REVIEW-XIBE/issues) with:
 
 - **Clear title** describing the issue
 - **Steps to reproduce** the bug
@@ -1226,7 +1226,7 @@ This project is licensed under the **ISC License** - see the [LICENSE](LICENSE) 
 ```
 ISC License
 
-Copyright (c) 2024 xibe-pr1 Contributors
+Copyright (c) 2024 PR-REVIEW-XIBE Contributors
 
 Permission to use, copy, modify, and/or distribute this software for any
 purpose with or without fee is hereby granted, provided that the above
@@ -1245,7 +1245,7 @@ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 <div align="center">
 
-**Built with ❤️ by the xibe-pr1 community**
+**Built with ❤️ by the PR-REVIEW-XIBE community**
 
 [![GitHub contributors](https://img.shields.io/github/contributors/iotserver24/PR-REVIEW-XIBE.svg)](https://github.com/iotserver24/PR-REVIEW-XIBE/graphs/contributors)
 [![GitHub last commit](https://img.shields.io/github/last-commit/iotserver24/PR-REVIEW-XIBE.svg)](https://github.com/iotserver24/PR-REVIEW-XIBE/commits/main)
