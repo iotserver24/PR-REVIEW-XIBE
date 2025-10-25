@@ -53,18 +53,20 @@ graph TD
     A[GitHub PR Comments] --> B[PR-REVIEW-XIBE Bot]
     B --> C[Webhook Handler]
     B --> D[Analysis Engine]
-    C --> E[OpenAI GPT API]
+    C --> E[Xibe.app API]
     D --> E
-    B --> F[GitHub API Integration]
-    D --> G[PR Review Comments]
+    E --> F[OpenAI SDK]
+    B --> G[GitHub API Integration]
+    D --> H[PR Review Comments]
     
     style A fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#000
     style B fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#000
     style C fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#000
     style D fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#000
-    style E fill:#e8f5e8,stroke:#388e3c,stroke-width:2px,color:#000
-    style F fill:#fce4ec,stroke:#c2185b,stroke-width:2px,color:#000
-    style G fill:#f1f8e9,stroke:#689f38,stroke-width:2px,color:#000
+    style E fill:#e1f5fe,stroke:#0277bd,stroke-width:2px,color:#000
+    style F fill:#e8f5e8,stroke:#388e3c,stroke-width:2px,color:#000
+    style G fill:#fce4ec,stroke:#c2185b,stroke-width:2px,color:#000
+    style H fill:#f1f8e9,stroke:#689f38,stroke-width:2px,color:#000
 ```
 
 ## ✨ Features
