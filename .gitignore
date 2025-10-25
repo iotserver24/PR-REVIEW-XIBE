@@ -1,0 +1,46 @@
+node_modules/
+.env
+.env.local
+.env.production
+.env.development
+*.log
+.DS_Store
+/pr-site
+pr-site/
+.pr-site/
+/pr-site/
+test-analytics.js
+
+# Security - Private keys and secrets
+*.pem
+*.key
+*.p12
+*.pfx
+private-key*
+*-private-key*
+*.private
+secrets/
+.secrets/
+
+# Testing files - only ignore specific test files, not all test-*.js
+test-analytics.js
+test-*.md
+test/
+__tests__/
+coverage/
+.nyc_output/
+test-results/
+test-output/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+

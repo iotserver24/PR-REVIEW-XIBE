@@ -1,0 +1,18 @@
+[Unit]
+Description=PR Review Bot - AI-powered GitHub PR reviewer
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/xibe-pr1
+ExecStart=/usr/bin/node /home/ubuntu/xibe-pr1/bot.js
+Restart=always
+RestartSec=10
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=pr-review-bot
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target
