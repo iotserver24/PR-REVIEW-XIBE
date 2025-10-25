@@ -1507,7 +1507,7 @@ app.get('/', (req, res) => {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>xibe-pr1 - AI-Powered PR Review Bot</title>
+        <title>PR-REVIEW-XIBE - AI-Powered PR Review Bot</title>
         <style>
             * {
                 margin: 0;
@@ -1668,7 +1668,7 @@ app.get('/', (req, res) => {
     <body>
         <div class="container">
             <div class="header">
-                <h1>🤖 xibe-pr1</h1>
+                <h1>🤖 PR-REVIEW-XIBE</h1>
                 <p>AI-Powered GitHub PR Review Bot</p>
                 <div class="badge">🚀 Production Ready • 🔍 Smart Reviews • 📊 Real-time Monitoring</div>
             </div>
@@ -1748,7 +1748,7 @@ app.get('/status', (req, res) => {
       <!DOCTYPE html>
       <html>
         <head>
-          <title>xibe-pr1 Dashboard - Error</title>
+          <title>PR-REVIEW-XIBE Dashboard - Error</title>
           <style>
             body { font-family: Arial, sans-serif; margin: 40px; background: #f5f5f5; }
             .container { max-width: 800px; margin: 0 auto; background: white; padding: 40px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }

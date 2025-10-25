@@ -5,8 +5,8 @@ After=network.target
 [Service]
 Type=simple
 User=ubuntu
-WorkingDirectory=/home/ubuntu/xibe-pr1
-ExecStart=/usr/bin/node /home/ubuntu/xibe-pr1/bot.js
+WorkingDirectory=/home/ubuntu/PR-REVIEW-XIBE
+ExecStart=/usr/bin/node /home/ubuntu/PR-REVIEW-XIBE/bot.js
 Restart=always
 RestartSec=10
 StandardOutput=syslog

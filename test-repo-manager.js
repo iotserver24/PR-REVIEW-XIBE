@@ -12,12 +12,12 @@ import path from 'path';
 const TEST_CONFIG = {
   privateRepo: {
     remote: 'origin-private',
-    url: 'git@github.com:test/xibe-pr1-private.git',
+    url: 'git@github.com:test/PR-REVIEW-XIBE-private.git',
     branch: 'main'
   },
   publicRepo: {
     remote: 'origin-public',
-    url: 'git@github.com:test/xibe-pr1.git',
+    url: 'git@github.com:test/PR-REVIEW-XIBE.git',
     branch: 'main'
   },
   privateKeyParts: {

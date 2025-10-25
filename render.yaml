@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: xibe-pr1-bot
+    name: pr-review-xibe-bot
     env: node
     plan: free
     buildCommand: npm install

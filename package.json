@@ -1,5 +1,5 @@
 {
-  "name": "xibe-pr1",
+  "name": "pr-review-xibe",
   "version": "1.0.0",
   "description": "AI-powered PR review bot for GitHub",
   "main": "bot.js",

@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/iotserver24/xibe-pr1)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/iotserver24/PR-REVIEW-XIBE)
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D14.0.0-brightgreen.svg)](https://nodejs.org/)
 [![OpenAI SDK](https://img.shields.io/badge/OpenAI-SDK-blue.svg)](https://openai.com/)
 [![OpenAI SDK](https://img.shields.io/badge/provider-XIBE--AI-blue.svg)](https://xibe.app/)
@@ -14,9 +14,9 @@
 [![Enterprise](https://img.shields.io/badge/status-enterprise-blue.svg)](https://xibe.app)
 [![AI Powered](https://img.shields.io/badge/powered-Xibe--AI-blue.svg)](https://xibe.app/)
 
-[![Issues](https://img.shields.io/github/issues/iotserver24/xibe-pr1.svg)](https://github.com/iotserver24/xibe-pr1/issues)
-[![Stars](https://img.shields.io/github/stars/iotserver24/xibe-pr1.svg?style=social)](https://github.com/iotserver24/xibe-pr1/stargazers)
-[![Forks](https://img.shields.io/github/forks/iotserver24/xibe-pr1.svg?style=social)](https://github.com/iotserver24/xibe-pr1/network/members)
+[![Issues](https://img.shields.io/github/issues/iotserver24/PR-REVIEW-XIBE.svg)](https://github.com/iotserver24/PR-REVIEW-XIBE/issues)
+[![Stars](https://img.shields.io/github/stars/iotserver24/PR-REVIEW-XIBE.svg?style=social)](https://github.com/iotserver24/PR-REVIEW-XIBE/stargazers)
+[![Forks](https://img.shields.io/github/forks/iotserver24/PR-REVIEW-XIBE.svg?style=social)](https://github.com/iotserver24/PR-REVIEW-XIBE/network/members)
 
 **AI-Powered GitHub PR Review Bot** 🚀
 
@@ -135,8 +135,8 @@ An intelligent, automated pull request review system that leverages OpenAI's GPT
 
 ```bash
 # Clone the repository
-git clone https://github.com/iotserver24/xibe-pr1.git
-cd xibe-pr1
+git clone https://github.com/iotserver24/PR-REVIEW-XIBE.git
+cd PR-REVIEW-XIBE
 
 # Install dependencies
 npm install
@@ -154,7 +154,7 @@ npm start
 After cloning, you'll find:
 
 ```
-xibe-pr1/
+PR-REVIEW-XIBE/
 ├── 📁 assests/           # Static assets and logos
 ├── 📄 bot.js            # Main bot application entry point
 ├── 📄 package.json      # Dependencies and scripts
@@ -729,8 +729,8 @@ sudo usermod -aG sudo xibe-bot
 sudo su - xibe-bot
 
 # Clone repository
-git clone https://github.com/iotserver24/xibe-pr1.git
-cd xibe-pr1
+git clone https://github.com/iotserver24/PR-REVIEW-XIBE.git
+cd PR-REVIEW-XIBE
 
 # Install dependencies
 npm install --production
@@ -1080,11 +1080,11 @@ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH RE
 
 ### 🔗 Links & Resources
 
-- 🌐 **Homepage**: https://github.com/iotserver24/xibe-pr1
+- 🌐 **Homepage**: https://github.com/iotserver24/PR-REVIEW-XIBE
 - 📚 **Documentation**: See `/docs` folder for detailed guides
-- 🐛 **Issues**: https://github.com/iotserver24/xibe-pr1/issues
-- 💬 **Discussions**: https://github.com/iotserver24/xibe-pr1/discussions
-- 📖 **Wiki**: https://github.com/iotserver24/xibe-pr1/wiki
+- 🐛 **Issues**: https://github.com/iotserver24/PR-REVIEW-XIBE/issues
+- 💬 **Discussions**: https://github.com/iotserver24/PR-REVIEW-XIBE/discussions
+- 📖 **Wiki**: https://github.com/iotserver24/PR-REVIEW-XIBE/wiki
 
 ---
 
@@ -1103,7 +1103,7 @@ We love your input! We want to make contributing to this project as easy and tra
 ### 📝 How to Contribute
 
 1. **Fork** the repository and create your branch from `main`
-2. **Clone** your fork locally: `git clone https://github.com/your-username/xibe-pr1.git`
+2. **Clone** your fork locally: `git clone https://github.com/your-username/PR-REVIEW-XIBE.git`
 3. **Create** a feature branch: `git checkout -b feature/amazing-feature`
 4. **Make** your changes and test them thoroughly
 5. **Commit** your changes: `git commit -m 'Add some amazing feature'`
@@ -1132,8 +1132,8 @@ We use GitHub to host code, to track issues and feature requests, as well as acc
 
 ```bash
 # Fork and clone
-git clone https://github.com/your-username/xibe-pr1.git
-cd xibe-pr1
+git clone https://github.com/your-username/PR-REVIEW-XIBE.git
+cd PR-REVIEW-XIBE
 
 # Install dependencies
 npm install
@@ -1247,9 +1247,9 @@ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 **Built with ❤️ by the xibe-pr1 community**
 
-[![GitHub contributors](https://img.shields.io/github/contributors/iotserver24/xibe-pr1.svg)](https://github.com/iotserver24/xibe-pr1/graphs/contributors)
-[![GitHub last commit](https://img.shields.io/github/last-commit/iotserver24/xibe-pr1.svg)](https://github.com/iotserver24/xibe-pr1/commits/main)
+[![GitHub contributors](https://img.shields.io/github/contributors/iotserver24/PR-REVIEW-XIBE.svg)](https://github.com/iotserver24/PR-REVIEW-XIBE/graphs/contributors)
+[![GitHub last commit](https://img.shields.io/github/last-commit/iotserver24/PR-REVIEW-XIBE.svg)](https://github.com/iotserver24/PR-REVIEW-XIBE/commits/main)
 
-**[⭐ Star this repo](#) • [🐛 Report Bug](https://github.com/iotserver24/xibe-pr1/issues) • [💬 Start Discussion](https://github.com/iotserver24/xibe-pr1/discussions)**
+**[⭐ Star this repo](#) • [🐛 Report Bug](https://github.com/iotserver24/PR-REVIEW-XIBE/issues) • [💬 Start Discussion](https://github.com/iotserver24/PR-REVIEW-XIBE/discussions)**
 
 </div>
